@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    // zawijanie wierszy
+    flex-wrap: wrap;
+    // usuwamy margines w row zeby nie było problemu z rozkładem kolumn
+    margin: 0 -$gutter;
+    padding: $grid-base * 1.5;
+
+    @include medium() {
+        // teraz będą się ukłądały obok siebie kolumny
+        flex-direction: row;
+        
+    }
+}

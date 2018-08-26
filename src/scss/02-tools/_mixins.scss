@@ -1,0 +1,27 @@
+@mixin medium {
+    // jak przypisujemy właściwość to musi być interpolacja #{ }
+    @media all and (min-width: #{$bp-md}) {
+        // @content pozwoli na dynamiczne dodawanie kontentu
+        // bedziemy dodawac rozna zawartosc z kodu scss
+        @content;
+    }
+}
+
+@mixin large {
+    @media all and (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+
+// h1 {
+//     font-size: $font-base *4;
+//     // zapytanie tzw śródliniowe - zwiększa czytelność
+//     @include medium() {
+//         color: green;
+//         font-size: $font-base * 5;
+//     }
+//     @include large() {
+//         color: red;
+//         font-size: $font-base *6;
+//     }
+// }

@@ -1,0 +1,5 @@
+// sama * nie działa na pseudoelementy, więc dodajemy dodatkowo before i after, bo to shadow css
+*, *::before, *::after {
+    // marginesy
+    box-sizing: border-box;
+}
