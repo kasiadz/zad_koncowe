@@ -1,0 +1,18 @@
+.boxes{
+    background-color: $red;
+    color: $white;
+    border-radius: $grid-base * .9;
+
+    &__text {
+        text-align: center;
+        padding: $grid-base *1.5;
+        // margin-top: $grid-base * 2;
+        // margin-bottom: $grid-base * 2;
+    }
+
+}
+
+.plain{
+    background-color: $green;
+   
+}

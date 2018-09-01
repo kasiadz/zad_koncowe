@@ -1,4 +1,5 @@
 .section {
-    height: 70vh;
-    border-bottom: 1px solid lightcoral;
+    min-height: 25vh;
+    padding: $grid-base *3;
+    // border-bottom: 1px solid gray;
 }

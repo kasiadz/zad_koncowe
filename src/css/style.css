@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Italianno");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,14 +54,24 @@ html {
   font-size: 10px; }
 
 body {
+  font-family: 'Roboto', sans-serif; }
+
+header, h2, h3 {
   font-family: 'Italianno', cursive; }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px; }
 
+div {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300; }
+
 .container {
+  position: relative;
   width: 100%;
+  min-height: 30vh;
   margin: 0 auto;
   padding: 0 15px; }
   @media all and (min-width: 768px) {
@@ -95,6 +106,10 @@ p {
     .col--md25 {
       flex: 0 0 25%;
       max-width: 25%; } }
+  @media all and (min-width: 768px) {
+    .col--md16 {
+      flex: 0 0 16,666666%;
+      max-width: 16,666666%; } }
   @media all and (min-width: 1240px) {
     .col--lg50 {
       flex: 0 0 50%;
@@ -107,6 +122,10 @@ p {
     .col--lg25 {
       flex: 0 0 25%;
       max-width: 25%; } }
+  @media all and (min-width: 1240px) {
+    .col--lg16 {
+      flex: 0 0 16%;
+      max-width: 16%; } }
 
 .blackout {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -114,7 +133,7 @@ p {
 .nav__item {
   display: block;
   font-size: 30px;
-  padding-bottom: 20px; }
+  padding: 10px; }
   @media all and (min-width: 768px) {
     .nav__item {
       display: inline-block;
@@ -122,17 +141,26 @@ p {
 
 .nav__link {
   text-decoration: none;
-  color: #eff0f3; }
+  color: #eff0f3;
+  line-height: 12px; }
+  .nav__link:hover {
+    color: #fce8d5; }
 
 .heading--h1 {
   color: #eff0f3;
   font-size: 90px; }
 
 .heading--h2 {
-  font-size: 35px;
+  font-size: 45px;
   width: 100%;
   text-align: center;
-  padding-top: 20px; }
+  padding: 20px; }
+
+.heading--h3 {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300; }
 
 .btn {
   color: #eff0f3;
@@ -141,29 +169,86 @@ p {
   display: inline-block;
   font-size: 22px;
   font-weight: bold;
-  padding: 15px;
   text-align: center;
   width: 200px;
-  transition-duration: .5s;
   text-decoration: none; }
   .btn--red {
     background-color: #74030e; }
     .btn--red:hover {
       background-color: #420208; }
   .btn--green {
-    background-color: #132601; }
+    background-color: #fce8d5; }
     .btn--green:hover {
-      background-color: black; }
+      background-color: #f9cea5; }
   .btn--circle {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     line-height: 100px;
     padding: 0; }
+  .btn--przystawki {
+    background-color: #74030e; }
+    .btn--przystawki:hover {
+      background: url("../img/przystawki.jpg") center/cover no-repeat;
+      color: rgba(255, 255, 255, 0); }
+  .btn--mieso {
+    background-color: #74030e; }
+    .btn--mieso:hover {
+      background: url("../img/mieso.jpg") center/cover no-repeat;
+      color: rgba(255, 255, 255, 0); }
+  .btn--salatki {
+    background-color: #74030e; }
+    .btn--salatki:hover {
+      background: url("../img/vege.jpg") center/cover no-repeat;
+      color: rgba(255, 255, 255, 0); }
+  .btn--pizza {
+    background-color: #74030e; }
+    .btn--pizza:hover {
+      background: url("../img/pizza.jpg") center/cover no-repeat;
+      color: rgba(255, 255, 255, 0); }
+  .btn--zupy {
+    background-color: #74030e; }
+    .btn--zupy:hover {
+      background: url("../img/zupa.jpg") center/cover no-repeat;
+      color: rgba(255, 255, 255, 0); }
+  .btn--napoje {
+    background-color: #74030e; }
+    .btn--napoje:hover {
+      background: url("../img/napoje.jpg") center/cover no-repeat;
+      color: rgba(255, 255, 255, 0); }
 
 .section {
-  height: 70vh;
-  border-bottom: 1px solid lightcoral; }
+  min-height: 25vh;
+  padding: 30px; }
+
+.to-top {
+  width: 50px;
+  height: 50px;
+  background-color: #fce8d5;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 36px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  border: 1px solid #74030e;
+  display: none;
+  color: #eff0f3; }
+  .to-top__link {
+    color: #74030e;
+    text-decoration: none; }
+
+.boxes {
+  background-color: #74030e;
+  color: #eff0f3;
+  border-radius: 9px; }
+  .boxes__text {
+    text-align: center;
+    padding: 15px; }
+
+.plain {
+  background-color: #fce8d5; }
 
 .site-header {
   background: url("../img/start.jpeg") center/cover no-repeat;
@@ -189,6 +274,27 @@ p {
     margin: 0 auto;
     left: 0;
     right: 0; }
+
+.main__button {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+
+.main__p {
+  text-align: center;
+  padding: 10px; }
+  .main__p__bold {
+    font-weight: bold; }
+
+.footer {
+  background-color: #74030e;
+  height: 20vh;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+  color: #fce8d5; }
 
 .text-center {
   text-align: center; }

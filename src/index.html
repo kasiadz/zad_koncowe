@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Restauracja Dolce Vita</title>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" id="top">
         <div class="blackout site-header__blackout"></div>
         <nav class="site-header__nav">
             <ul>
@@ -23,39 +24,84 @@
         <a href="#menu" class="btn btn--circle btn--red site-header__button">Menu</a>
     </header>
     <main>
-        <section id="start" class="section">
+        <section id="start" class="section plain">
             <h2 class="heading--h2">Start</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col col--md50 col--lg25">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto numquam amet? Ipsa temporibus consequuntur amet officia, itaque voluptatum. Dolorum harum sed inventore? Laudantium ratione pariatur iure placeat ducimus! Minus?
+                    <div class="col col--md50 col--lg50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut, totam eius impedit eum id quisquam sunt eligendi, nulla minus earum delectus at officia. Adipisci sint ab ea veniam nobis. Laboriosam provident pariatur molestias quidem ducimus dolorem magnam tempore alias dignissimos. Modi eius eum dolores rerum architecto magnam, aspernatur doloribus? Consequuntur, ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem perferendis enim facilis reprehenderit? Vero hic id quaerat suscipit animi iusto tenetur, aliquid autem quibusdam, laboriosam cumque doloribus pariatur. Neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex animi molestias aut perferendis eum sunt minus? Dolor iste ullam, fugiat corporis, vero, molestiae itaque amet enim aliquid alias aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto numquam amet? Ipsa temporibus consequuntur amet officia, itaque voluptatum. Dolorum harum sed inventore? Laudantium ratione pariatur iure placeat ducimus! Minus?
                     </div>
-                    <div class="col col--md50 col--lg25">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus, ratione qui voluptates corrupti molestiae eveniet exercitationem repellat incidunt voluptas minima sunt vero perspiciatis. Minus consectetur mollitia cumque animi ad!
-                    </div>
-                    <div class="col col--md50 col--lg25">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reprehenderit rerum dolorem inventore neque obcaecati modi quo veniam vero eius officiis voluptatum a ad velit animi quisquam libero? Deserunt, quibusdam?
-                    </div>
-                    <div class="col col--md50 col--lg25">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsam et earum, quidem reiciendis ipsa vitae esse vel repellat placeat laboriosam nemo sapiente fuga doloribus, cumque voluptatibus qui amet soluta.
+                    <div class="col col--md50 col--lg50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rerum repellat numquam dolor dignissimos nostrum nam! Quos dolores repudiandae sed sint id officiis ab ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia sequi unde in velit odit at, explicabo laborum praesentium aliquam nesciunt dolorum ut cumque labore aperiam, ratione, totam maxime omnis. At architecto recusandae eum sed? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tempore in totam qui quidem modi nostrum nobis animi natus obcaecati aliquid enim consectetur non cum nam, minus sit iure earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo numquam minus possimus reprehenderit libero totam ex, dolorem, atque fugit quaerat nisi molestias quis vero, magnam commodi nemo. Laboriosam, atque esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus, ratione qui voluptates corrupti molestiae eveniet exercitationem repellat incidunt voluptas minima sunt vero perspiciatis. Minus consectetur mollitia cumque animi ad!
                     </div>
                 </div>
             </div>
         </section>
         <section id="menu" class="section">
             <h2 class="heading--h2">Menu</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="container col col--md33 col--lg16">
+                        <div class="btn btn--circle btn--przystawki main__button"><h3 class="heading--h3">Przystawki</h3></div>
+                    </div>
+                    <div class="container col col--md33 col--lg16">
+                        <div class="btn btn--circle btn--mieso main__button"><h3 class="heading--h3">Dania główne</h3></div>
+                    </div>
+                    <div class="container col col--md33 col--lg16">
+                        <div class="btn btn--circle btn--salatki main__button"><h3 class="heading--h3">Sałatki</h3></div>
+                    </div>
+                    <div class="container col col--md33 col--lg16">
+                        <div class="btn btn--circle btn--pizza main__button"><h3 class="heading--h3">Pizza</h3></div>
+                    </div>
+                    <div class="container col col--md33 col--lg16">
+                        <div class="btn btn--circle btn--zupy main__button"><h3 class="heading--h3">Zupy</h3></div>
+                    </div>
+                    <div class="container col col--md33 col--lg16">
+                        <div class="btn btn--circle btn--napoje main__button"><h3 class="heading--h3">Napoje</h3></div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="location" class="section">
+        <section id="location" class="section plain">
             <h2 class="heading--h2">Lokalizacja</h2>
+            <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.737640535659!2d19.95323491571705!3d50.05374587942247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b3f500ba1e1%3A0x7ccd1b01e2fc3842!2sGaleria+Kazimierz!5e0!3m2!1spl!2spl!4v1535665910410" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                        </div>
+                    </div>
+                </div>
         </section>
         <section id="contact" class="section">
             <h2 class="heading--h2">Kontakt</h2>
+            <p class="main__p"> 
+                <i class="fas fa-phone"></i> +48 000 00 00 <br>
+                <i class="far fa-envelope"></i> kontakt@dolcevita.pl <br>
+            </p>
+            <p class="main__p">
+                Godziny otwarcia: <br>
+               <span class="main__p__bold">niedziela - czwartek</span><br>
+                10:00 - 22:00 <br>
+                <span class="main__p__bold">piątek - sobota</span><br>
+                10:00 - 1.00
+            </p>
+               
+
+
+
+
         </section>
         
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <p>&#169 2018</p>
+    </footer>
 
+    <div id="to_top" class="to-top"><a href="#top" class="to-top__link fas fa-caret-up"></a></div>
+
+
+    <!-- pobrane z jquery google cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

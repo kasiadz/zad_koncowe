@@ -1,8 +1,14 @@
 p {
-    font-size: $font-base * 2;
+    font-size: $font-base * 1.6;
     line-height: $font-base * 2.2;
+
+    // &__bold {
+    //     font-weight: bold;
+    //     color: yellow;
+    // }
 }
-// div {
-//     font-size: $font-base * 2;
-//     line-height: $font-base * 2.2;
-// }
+div {
+    font-size: $font-base * 1.4;
+    line-height: $font-base * 2;
+    font-weight: 300;
+}

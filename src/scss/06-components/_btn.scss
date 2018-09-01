@@ -5,10 +5,10 @@
     display: inline-block;
     font-size: $font-base *2.2;
     font-weight: bold;
-    padding: $grid-base * 1.5;
+    // padding: $grid-base * 1.5;
     text-align: center;
     width: $grid-base * 20;
-    transition-duration: .5s;
+    // transition-duration: .5s;
     text-decoration: none;
 
     // modyfikatory
@@ -16,14 +16,14 @@
         background-color: $red;
 
         &:hover {
-            background-color: darken($red, 10%)
+            background-color: darken($red, 10%);
         }
     
     }
     &--green {
         background-color: $green;
         &:hover {
-            background-color: darken($green, 10%)
+            background-color: darken($green, 10%);
         }
 
     }
@@ -34,5 +34,55 @@
         height: $grid-base * 10;
         line-height: $grid-base * 10;
         padding: 0;
+    }
+
+    &--przystawki {
+        background-color: $red;
+        &:hover {
+            background: url('../img/przystawki.jpg') center/cover no-repeat;
+            color: rgba(255, 255, 255, 0);
+            // transition-duration: .5s;
+
+        }
+    }
+
+    &--mieso {
+        background-color: $red;
+        &:hover {
+            background: url('../img/mieso.jpg') center/cover no-repeat;
+            color: rgba(255, 255, 255, 0);
+        }
+    }
+
+    &--salatki {
+        background-color: $red;
+        &:hover {
+            background: url('../img/vege.jpg') center/cover no-repeat;
+            color: rgba(255, 255, 255, 0);
+        }
+    }
+
+    &--pizza {
+        background-color: $red;
+        &:hover {
+            background: url('../img/pizza.jpg') center/cover no-repeat;
+            color: rgba(255, 255, 255, 0);
+        }
+    }
+
+    &--zupy {
+        background-color: $red;
+        &:hover {
+            background: url('../img/zupa.jpg') center/cover no-repeat;
+            color: rgba(255, 255, 255, 0);
+        }
+    }
+
+    &--napoje {
+        background-color: $red;
+        &:hover {
+            background: url('../img/napoje.jpg') center/cover no-repeat;
+            color: rgba(255, 255, 255, 0);
+        }
     }
 }

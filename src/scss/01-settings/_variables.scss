@@ -1,7 +1,7 @@
 // kolory
 $color1: #eff0f3;
 $color2: #74030e;
-$color3: #132601;
+$color3: rgb(252, 232, 213);
 
 $white: $color1;
 $red: $color2;
@@ -16,5 +16,6 @@ $grid-base: $font-base;
 $gutter: 1.5 * $grid-base;
 
 // breakpoint - dla RWD
+// $bp-sm: 500px;
 $bp-md: 768px;
 $bp-lg: 1240px;

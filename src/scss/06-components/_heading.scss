@@ -5,9 +5,17 @@
         font-size: $font-base * 9;
     }
     &--h2{
-        font-size: $font-base * 3.5;
+        font-size: $font-base * 4.5;
         width: 100%;
         text-align: center;
-        padding-top: $grid-base *2;
+        padding: $grid-base *2;
+        
+    }
+    &--h3{
+        font-size: $font-base * 2.5;
+        // line-height: $font-base;
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
     }
 }

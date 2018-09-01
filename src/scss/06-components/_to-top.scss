@@ -1,0 +1,23 @@
+.to-top {
+    width: $grid-base * 5;
+    height: $grid-base * 5;
+    // background-color: lightgrey;
+    background-color: $green;
+    position: fixed;
+    bottom: $grid-base * 2;
+    right: $grid-base * 2;
+    font-size: $font-base * 3.6;
+    text-align: center;
+    line-height: $grid-base * 5;
+    border-radius: $grid-base * .4;
+    border: 1px solid $red;
+    // defaultowo ukrywamy przycisk
+    display: none;
+    color: $white;
+
+    &__link{
+        color: $red;
+        text-decoration: none;
+    }
+}
+

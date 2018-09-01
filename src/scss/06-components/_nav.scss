@@ -3,7 +3,8 @@
     &__item{
         display: block;
         font-size: $font-base * 3;
-        padding-bottom: $grid-base *2;
+        padding: $grid-base;
+        // padding-bottom: $grid-base *2;
         
 
         @include medium() {
@@ -15,5 +16,10 @@
     &__link{
         text-decoration: none;
         color: $white;
+        line-height: $font-base *1.2;
+
+        &:hover {
+          color: $green;
+        }
     }
 }
